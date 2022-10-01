@@ -57,7 +57,7 @@ header{
             .nav__item{
                 margin: 0 35px;
                 .nav__link{
-                    font-size: 20px;
+                    font-size: 18px;
                     color: $light-color;
                     font-weight: 500;
                     line-height: 25px;
@@ -199,16 +199,129 @@ main{
                 font-size: 64px;
                 line-height: 82px;
                 color: $light-color;
-                &::after{
-                    content: '';
-                    position: absolute;
-                    height: 1px;
-                    background-color: $secondary-color;
-                    width: 350px;
-                    bottom: -40px;
-                    right: 41%;
+                // &::after{
+                //     content: '';
+                //     position: absolute;
+                //     height: 1px;
+                //     background-color: $secondary-color;
+                //     width: 350px;
+                //     bottom: -40px;
+                //     right: 41%;
+                // }
+            }
+        }
+        .about__text{
+            margin-top: 65px;
+            text-align: center;
+            width: 100%;
+            p{
+                color: $light-color;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 36px;
+                line-height: 61px;
+                text-align: center;
+            }
+        }
+        .about__services{
+            margin-top: 150px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            .service{
+                color: $light-color;
+                margin: 40px;
+                .service__header{
+                    h1{
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 48px;
+                        line-height: 61px;
+                    }
+                }
+                .service__text{
+                    margin-top: 15px;
+                    max-width: 511px;
+                    p{
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 28px;
+                        color: rgba(255, 255, 255, 0.5);
+                    }
                 }
             }
         }
     }
+    .skills{
+        margin-top: 150px;
+        .skills__header{
+            text-align: center;
+            h1{
+                font-style: normal;
+                font-weight: 500;
+                font-size: 64px;
+                line-height: 82px;
+                color: $light-color;
+            }
+        }
+        .skills__text{
+            margin-top: 50px;
+            p{
+                font-style: normal;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 31px;
+                color: rgba(255, 255, 255, 0.5);
+            }
+        }
+        .skills__counter{
+            margin-top: 110px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .works{
+                color: $light-color;
+                .up{
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 40px;
+                    line-height: 51px;
+                }
+                .bottom{
+                    margin-top: 15px;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 80px;
+                    line-height: 122px;
+                }
+            }
+        }
+
+        .software__skills{
+            margin-top: 150px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            flex: 1 0;
+            .skill__box{
+                display: flex;
+                justify-content: center;
+                margin: 15px;
+                background-color: #000;
+                width: 200px;
+                height: 200px;
+                border-radius: 8px;
+                -webkit-box-shadow: 1px 1px 7px 1px rgba(0,0,0,0.51); 
+                box-shadow: 1px 1px 7px 1px rgba(0,0,0,0.51);
+                img{
+                    width: 80px;
+                }
+            }
+        }
+    }
+    
 }
