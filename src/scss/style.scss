@@ -189,7 +189,7 @@ main{
         }
     }
 
-    .about{
+    .about__section{
         margin-top: 150px;
         .about__header{
             text-align: center;
@@ -254,7 +254,7 @@ main{
             }
         }
     }
-    .skills{
+    .skills__section{
         margin-top: 150px;
         .skills__header{
             text-align: center;
@@ -318,10 +318,140 @@ main{
                 -webkit-box-shadow: 1px 1px 7px 1px rgba(0,0,0,0.51); 
                 box-shadow: 1px 1px 7px 1px rgba(0,0,0,0.51);
                 img{
-                    width: 80px;
+                    width: 90px;
                 }
             }
         }
     }
-    
+    .resume__section{
+        padding-bottom: 3rem;
+        margin-top: 150px;
+        .resume__header{
+            text-align: center;
+            h1{
+                color: $light-color;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 64px;
+                line-height: 82px;
+            }
+        }
+        .resume__wrapper{
+            margin-top: 150px;
+            display: flex;
+            justify-content: space-between;
+            .resume__left{
+                color: $light-color;
+                width: 45%;
+                .education__header{
+                    h1{
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 48px;
+                        line-height: 61px;
+                    }
+                }
+                .education__wrapper{
+                    margin-top: 75px;
+                    .school__name{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        h1{
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 32px;
+                            line-height: 41px;
+                            /* identical to box height */
+                            text-decoration-line: underline;
+                        }
+                        h3{
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 20px;
+                            line-height: 26px;
+                            /* identical to box height */
+
+                            text-decoration-line: underline;
+                        }
+                    }
+                    .school__about{
+                        margin-top: 10px;
+                        p{
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 16px;
+                            line-height: 20px;
+                            text-decoration-line: underline;
+                        }
+                    }
+                }
+            }
+            .resume__right{
+                color: $light-color;
+                width: 45%;
+                h1{
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 48px;
+                    line-height: 61px;
+                }
+                .experience__wrapper{
+                    margin-top: 75px;
+                    .work__name{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        h1{
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 32px;
+                            line-height: 41px;
+                            /* identical to box height */
+                            text-decoration-line: underline;
+                        }
+                        h3{
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 20px;
+                            line-height: 26px;
+                            /* identical to box height */
+
+                            text-decoration-line: underline;
+                        }
+                    }
+                    .work__about{
+                        margin-top: 10px;
+                        p{
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 16px;
+                            line-height: 20px;
+                            text-decoration-line: underline;
+                        }
+                    }
+                }
+            }
+        }
+        .resume__btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 75px;
+            button{
+                background-color: $secondary-color;
+                color: $light-color;
+                padding: 16px 58px;
+                font-size: 24px;
+                font-weight: 400;
+                font-family: 'Space Grotesk',sans-serif;
+                border-radius: 8px;
+                cursor: pointer;
+                .icon{
+                    font-size: 30px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
 }
