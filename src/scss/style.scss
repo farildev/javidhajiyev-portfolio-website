@@ -1,0 +1,191 @@
+//Google Fonts Import 
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+
+//Variables for color scheme//
+$main-color:#171717;
+$secondary-color: #512bd4;
+$light-color: #ededed;
+//SCSS Codes//
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 60px;
+    max-width: 1440px;
+    width: 100%;
+}
+
+body,
+html{
+    position: relative;
+    height: 100%;
+    background: $main-color;
+    font-family: 'Space Grotesk',sans-serif;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    height: 100px;
+    margin-top: 40px;
+    padding: 15px;
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            padding: 10px;
+        }
+        .nav__main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .nav__item{
+                margin: 0 35px;
+                .nav__link{
+                    font-size: 20px;
+                    color: $light-color;
+                    font-weight: 500;
+                    line-height: 25px;
+                }
+            }
+        }
+        .nav__btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .lang__btn{
+                margin-right: 40px;
+                button{
+                    border: 2px solid $secondary-color;
+                    background: transparent;
+                    color: $light-color;
+                    padding: 13px 23px;
+                    border-radius: 8px;
+                    font-family: 'Space Grotesk';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                    cursor: pointer;
+                }
+            }
+            .donate__btn{
+                button{
+                    background-color: $secondary-color;
+                    color: $light-color;
+                    padding: 13px 23px;
+                    border-radius: 8px;
+                    font-family: 'Space Grotesk';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.social__media{
+    position: absolute;
+    left: 0;
+    top: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 40px;
+    a{
+        font-size: 24px;
+        .bx{
+            color: $light-color;
+            margin: 15px 0;
+        }
+    }
+}
+
+.ellipse__effect{
+    position: absolute;
+    width: 668px;
+    height: 668px;
+    left: -242px;
+    top: 980px;
+    background: #7300F9;
+    filter: blur(527.5px);
+}
+
+.shape-1{
+    position: absolute;
+    width: 113px;
+    height: 82px;
+    right: 20px;
+    top: 500px;
+}
+.shape-2{
+    position: absolute;
+    width: 113px;
+    height: 82px;
+    left: 61px;
+    top: 666px;
+}
+main{
+    margin-top: 150px;
+    .hero__section{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        z-index: 9;
+        .hero__left{
+            width: 50%; 
+            .hero__header{
+                h1{
+                    color: $light-color;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 90px;
+                    line-height: 115px;
+                }
+            }
+            .hero__text{
+                margin-top: 30px;
+                p{
+                    color: $light-color;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 20px;
+                    line-height: 38px;
+                }
+            }
+            .hero__btn{
+                margin-top: 40px;
+                button{
+                    color: $light-color;
+                    background-color: $secondary-color;
+                    padding: 13px 23px;
+                    font-size: 16px;
+                    font-family: 'Space Grotesk',sans-serif;
+                    border-radius: 8px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .hero__right{
+            width: 45%;
+        }
+    }
+}
