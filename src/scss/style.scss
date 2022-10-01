@@ -188,4 +188,27 @@ main{
             width: 45%;
         }
     }
+
+    .about{
+        margin-top: 150px;
+        .about__header{
+            text-align: center;
+            h1{
+                font-style: normal;
+                font-weight: 500;
+                font-size: 64px;
+                line-height: 82px;
+                color: $light-color;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    height: 1px;
+                    background-color: $secondary-color;
+                    width: 350px;
+                    bottom: -40px;
+                    right: 41%;
+                }
+            }
+        }
+    }
 }
