@@ -6,5 +6,6 @@ $('.portfolio__carousel').slick({
     slidesToScroll: 1,
     autoplay: true,
     centerPadding: '25px',
-    arrows: false
+    arrows: true,
+    dots:true,
   });
