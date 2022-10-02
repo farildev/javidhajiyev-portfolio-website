@@ -694,3 +694,100 @@ main{
         }
     }
 }
+footer{
+    margin-top: 200px;
+    background-color: #111111;
+    padding: 100px 0;
+    .footer__main{
+        display: flex;
+        justify-content: space-between;
+        .footer__left{
+            width: 30%;
+            .footer__logo{
+                img{
+                    width: 60px;
+                }
+            }
+            .footer__copyright{
+                color: $light-color;
+                margin-top: 35px;
+                p{
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 31px;
+                }
+            }
+            .footer__social{
+                margin-top: 35px;
+                a{
+                    color: $light-color;
+                    font-size: 24px;
+                    margin: 5px;
+                }
+            }
+        }
+        .footer__center{
+            width: 30%;
+            margin-left: 80px;
+            .list__header{
+                h2{
+                    color: $light-color;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 31px;
+                }
+            }
+            .footer__nav{
+                margin-top: 30px;
+                .nav__item{
+                    margin: 15px 0;
+                    .nav__link{
+                        color: $light-color;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 20px;
+                        line-height: 26px;
+                    }
+                }
+            }
+        }
+        .footer__right{
+            width: 30%;
+            .contact__header{
+                h2{
+                    color: $light-color;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 31px;
+                }
+            }
+            .contact__info{
+                color: $light-color;
+                margin-top: 30px;
+                .email{
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 26px;
+                }
+                .phone{
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 26px;
+                    margin-top: 15px;
+                }
+                .adress{
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 26px;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
