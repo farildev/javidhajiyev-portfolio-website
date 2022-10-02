@@ -10,7 +10,7 @@ window.addEventListener('scroll' , function(){
 
 
 
-
+//Slick Slider Zone
 
 $('.portfolio__carousel').slick({
     infinite: true,
