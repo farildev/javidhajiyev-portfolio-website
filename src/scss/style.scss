@@ -132,9 +132,8 @@ header{
     position: absolute;
     width: 668px;
     height: 668px;
-    left: 1600px;
+    left: 1135px;
     top: 3200px;
-
     background: #7300F9;
     filter: blur(527.5px);
 }
@@ -334,7 +333,6 @@ main{
         }
     }
     .resume__section{
-        padding-bottom: 3rem;
         margin-top: 150px;
         .resume__header{
             text-align: center;
@@ -351,14 +349,14 @@ main{
             display: flex;
             justify-content: space-between;
             position: relative;
-            &::after{
-                position: absolute;
-                content: '';
-                width: 2px;
-                height: 650px;
-                background-color: $secondary-color;
-                left: 49%;
-            }
+             &::after{
+                 position: absolute;
+                 content: '';
+                 width: 2px;
+                 height: 650px;
+                 background-color: $secondary-color;
+                 left: 49%;
+             }
             .resume__left{
                 color: $light-color;
                 width: 43%;
@@ -488,12 +486,64 @@ main{
                 font-weight: 400;
                 font-family: 'Space Grotesk',sans-serif;
                 border-radius: 8px;
+                border: none;
+                outline: none;
                 cursor: pointer;
                 .icon{
                     font-size: 30px;
                     margin-left: 10px;
                     img{
                         margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .portfolio__section{
+        margin-top: 150px;
+        .portfolio__header{
+            text-align: center;
+            h1{
+                font-style: normal;
+                font-weight: 500;
+                font-size: 64px;
+                line-height: 82px;
+                color: $light-color;
+            }
+        }
+        .portfolio__carousel{
+            margin-top: 120px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .portfolio__item{
+                margin: 0 35px;
+                max-width: 400px;
+                .portfolio__img{
+                    img{
+                        width: 400px;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+                .portfolio__name{
+                    margin-top: 5px;
+                    width: 100%;
+                    h2{
+                        color: $light-color;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 48px;
+                        line-height: 61px;
+                    }
+                }
+                .portfolio__category{
+                    margin-top: 20px;
+                    span{
+                        color: $light-color;
+                        background-color: $secondary-color;
+                        padding: 9px 15px;
+                        border-radius: 7px;
                     }
                 }
             }
