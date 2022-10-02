@@ -528,7 +528,6 @@ main{
             .portfolio__item{
                 margin: 0 25px;
                 max-width: 400px;
-                border: 1px solid $secondary-color;
                 padding: 10px;
                 .portfolio__img{
                     position: relative;
@@ -576,6 +575,36 @@ main{
                     }
                 }
             }
+        }
+    }
+    .contact__section{
+        margin-top: 170px;
+        .contact__header{
+            text-align: center;
+            h1{
+                color: $light-color;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 48px;
+                line-height: 82px;
+            }
+        }
+        .contact__text{
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            p{
+                color: $light-color;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 31px;
+                text-align: center;
+                max-width: 658px;
+            }
+        }
+        .contact__content{
+            margin-top: 150px;
         }
     }
 }
