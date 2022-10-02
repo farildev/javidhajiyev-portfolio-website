@@ -31,6 +31,14 @@ html{
     height: 100%;
     background: $main-color;
     font-family: 'Space Grotesk',sans-serif;
+    &::-webkit-scrollbar{
+        width: 10px;
+        background: $main-color;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: $secondary-color;
+        border-radius: 15px;
+    }
 }
 
 header{
@@ -604,7 +612,85 @@ main{
             }
         }
         .contact__content{
-            margin-top: 150px;
+            margin-top: 75px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .content__left{
+                width: 55%;
+                .form-control{
+                    .personal-info{
+                        max-width: 776px;   
+                        input{
+                            width: 48%;
+                            margin: 4.5px;
+                            border: none;
+                            outline: none;
+                            background-color: #000000;
+                            padding: 22px 45px 22px 22px;
+                            color: $light-color;
+                            border-radius: 8px;
+                            font-family: 'Space Grotesk',sans-serif;
+                            font-size: 18px;
+                        }
+                    }
+                    .personal-adress{
+                        margin-top: 15px;
+                        max-width: 776px;   
+                        input{
+                            width: 48%;
+                            border: none;
+                            outline: none;
+                            background-color: #000000;
+                            padding: 22px 45px 22px 22px;
+                            color: $light-color;
+                            border-radius: 8px;
+                            margin: 4.5px;
+                            font-family: 'Space Grotesk',sans-serif;
+                            font-size: 18px;
+                        }
+                        
+                    }
+                    .message-area{
+                        margin-top: 15px;
+                        max-width: 765px;
+                        textarea{
+                            background-color: #000000;
+                            border: none;
+                            outline: none;
+                            color: $light-color;
+                            resize: none;
+                            padding: 22px;
+                            width: 100%;
+                            font-family: 'Space Grotesk',sans-serif;
+                            font-size: 18px;
+                            border-radius: 8px;
+                        }
+                    }
+                    .send-btn{
+                        margin-top: 30px;
+                        button{
+                            background-color: $secondary-color;
+                            border: none;
+                            outline: none;
+                            color: $light-color;
+                            font-family: 'Space Grotesk',sans-serif;
+                            font-weight: 400;
+                            padding: 15px 30px;
+                            font-size: 16px;
+                            border-radius: 8px;
+                        }
+                    }
+                }
+            }
+            .content__right{
+                .content__img{
+                    width: 45%;
+                    img{
+                        max-width: 350px;
+                    }
+                }
+            }
         }
     }
 }

@@ -309,14 +309,39 @@
             </div>
             <div class="contact__content">
                 <div class="content__left">
-
+                    <form action="" class="form-control">
+                        <div class="personal-info">
+                            <input type="text" placeholder="Enter your first name" required>
+                            <input type="text" placeholder="Enter your last name" required>
+                        </div>
+                        <div class="personal-adress">
+                            <input type="email" placeholder="Enter your email adress" required>
+                            <input list="type" placeholder="Select work type">
+                            <datalist id="type">
+                                <option value="HTML"></option>
+                                <option value="CSS"></option>
+                                <option value="Javascript"></option>
+                            </datalist>
+                        </div>
+                        <div class="message-area">
+                            <textarea name="" id="msg" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                        </div>
+                        <div class="send-btn">
+                            <button type="button">Send Message</button>
+                        </div>
+                    </form>
                 </div>
                 <div class="content__right">
-
+                    <div class="content__img">
+                        <img src="./dist/img/mailbox.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
     </main>
+    <footer>
+        
+    </footer>
     <!--Jquery CDN-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!--Slick Carousel CDN-->
