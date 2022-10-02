@@ -128,6 +128,16 @@ header{
     background: #7300F9;
     filter: blur(527.5px);
 }
+.ellipse__effect-2{
+    position: absolute;
+    width: 668px;
+    height: 668px;
+    left: 1600px;
+    top: 3200px;
+
+    background: #7300F9;
+    filter: blur(527.5px);
+}
 
 .shape-1{
     position: absolute;
@@ -340,9 +350,18 @@ main{
             margin-top: 150px;
             display: flex;
             justify-content: space-between;
+            position: relative;
+            &::after{
+                position: absolute;
+                content: '';
+                width: 2px;
+                height: 650px;
+                background-color: $secondary-color;
+                left: 49%;
+            }
             .resume__left{
                 color: $light-color;
-                width: 45%;
+                width: 43%;
                 .education__header{
                     h1{
                         font-style: normal;
@@ -353,6 +372,7 @@ main{
                 }
                 .education__wrapper{
                     margin-top: 75px;
+                    position: relative;
                     .school__name{
                         display: flex;
                         justify-content: space-between;
@@ -364,6 +384,16 @@ main{
                             line-height: 41px;
                             /* identical to box height */
                             text-decoration-line: underline;
+                            &::before{
+                                content: '';
+                                position: absolute;
+                                width: 40px;
+                                height: 40px;
+                                background-color: $secondary-color;
+                                left: -60px;
+                                top: 10px;
+                                border-radius: 50%;
+                            }
                         }
                         h3{
                             font-style: normal;
@@ -382,14 +412,13 @@ main{
                             font-weight: 300;
                             font-size: 16px;
                             line-height: 20px;
-                            text-decoration-line: underline;
                         }
                     }
                 }
             }
             .resume__right{
                 color: $light-color;
-                width: 45%;
+                width: 43%;
                 h1{
                     font-style: normal;
                     font-weight: 700;
@@ -398,6 +427,7 @@ main{
                 }
                 .experience__wrapper{
                     margin-top: 75px;
+                    position: relative;
                     .work__name{
                         display: flex;
                         justify-content: space-between;
@@ -409,6 +439,16 @@ main{
                             line-height: 41px;
                             /* identical to box height */
                             text-decoration-line: underline;
+                            &::before{
+                                content: '';
+                                position: absolute;
+                                width: 40px;
+                                height: 40px;
+                                background-color: $secondary-color;
+                                left: -60px;
+                                top: 10px;
+                                border-radius: 50%;
+                            }
                         }
                         h3{
                             font-style: normal;
@@ -427,7 +467,6 @@ main{
                             font-weight: 300;
                             font-size: 16px;
                             line-height: 20px;
-                            text-decoration-line: underline;
                         }
                     }
                 }
@@ -439,9 +478,12 @@ main{
             align-items: center;
             margin-top: 75px;
             button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 background-color: $secondary-color;
                 color: $light-color;
-                padding: 16px 58px;
+                padding: 10px 40px;
                 font-size: 24px;
                 font-weight: 400;
                 font-family: 'Space Grotesk',sans-serif;
@@ -450,6 +492,9 @@ main{
                 .icon{
                     font-size: 30px;
                     margin-left: 10px;
+                    img{
+                        margin-top: 10px;
+                    }
                 }
             }
         }
