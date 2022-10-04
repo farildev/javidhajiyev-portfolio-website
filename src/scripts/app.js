@@ -1,4 +1,3 @@
-AOS.init();
 
 window.addEventListener('scroll' , function(){
   let header = document.querySelector('.header');
@@ -20,3 +19,5 @@ $('.portfolio__carousel').slick({
     autoplaySpeed:2000,
     centerMode:true,
   });
+
+  AOS.init();
