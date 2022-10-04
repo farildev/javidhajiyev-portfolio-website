@@ -721,7 +721,7 @@ main{
                 line-height: 31px;
                 text-align: center;
                 max-width: 800px;
-                color: rgba(255, 255, 255, 0.5);
+                color: rgba(255, 255, 255, 0.5); 
             }
         }
         .contact__content{
@@ -745,13 +745,11 @@ main{
                             border-radius: 8px;
                             font-family: 'Space Grotesk',sans-serif;
                             font-size: 18px;
-                            transition: 300ms all ease-in-out;
                             &:focus{
                                 border: 1px solid $secondary-color;
                             }
                             &:hover{
                                 border: 1px solid $secondary-color;
-                                transition: 300ms all ease-in-out;
                             }
                         }
                     }
@@ -769,13 +767,11 @@ main{
                             margin: 4.5px;
                             font-family: 'Space Grotesk',sans-serif;
                             font-size: 18px;
-                            transition: 300ms all ease-in-out;
                             &:focus{
                                 border: 1px solid $secondary-color;
                             }
                             &:hover{
                                 border: 1px solid $secondary-color;
-                                transition: 300ms all ease-in-out;
                             }
                         }
                         
@@ -794,13 +790,11 @@ main{
                             font-family: 'Space Grotesk',sans-serif;
                             font-size: 18px;
                             border-radius: 8px;
-                            transition: 300ms all ease-in-out;
                             &:focus{
                                 border: 1px solid $secondary-color;
                             }
                             &:hover{
                                 border: 1px solid $secondary-color;
-                                transition: 300ms all ease-in-out;
                             }
                         }
                     }
