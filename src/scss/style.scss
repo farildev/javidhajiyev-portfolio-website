@@ -274,6 +274,9 @@ main{
         }
         .hero__right{
             width: 45%;
+            .hero__img{
+                max-width: 587px;
+            }
         }
     }
 
@@ -928,6 +931,26 @@ footer{
                     margin-top: 30px;
                 }
             }
+        }
+    }
+}
+
+//Media Queries
+
+@media (max-width:1280px){
+    .hero__section{
+        flex-wrap: wrap;
+        .hero__left{
+            width: 100%;
+            .hero__header{
+                h1{
+                    font-size: 18px;
+                }
+            }
+        }
+        .hero__right{
+            width: 0;
+            display: none;
         }
     }
 }
