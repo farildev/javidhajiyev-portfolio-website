@@ -225,8 +225,6 @@ main{
     .hero__section{
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
-        z-index: 9;
         .hero__left{
             width: 50%; 
             .hero__header{
@@ -938,19 +936,51 @@ footer{
 //Media Queries
 
 @media (max-width:1280px){
+    .header{
+        .navbar{
+            .nav__main{
+                display: none;
+            }
+        }
+    }
     .hero__section{
         flex-wrap: wrap;
+        flex-direction: column;
         .hero__left{
             width: 100%;
             .hero__header{
                 h1{
                     font-size: 18px;
+                    width: 100%;
                 }
             }
         }
         .hero__right{
-            width: 0;
-            display: none;
+            
         }
     }
+
+    .resume__section{
+        .resume__wrapper{
+            flex-direction: column;
+            width: 100%;
+
+        }
+    }
+}
+
+@media (max-width:992px){
+
+}
+
+@media (max-width: 768px){
+
+}
+
+@media (max-width: 480px){
+
+}
+
+@media (max-width: 360px){
+    
 }
