@@ -225,7 +225,7 @@ main{
         justify-content: space-between;
         width: 100%;
         .hero__left{
-            max-width: 50%; 
+            max-width: 45%; 
             margin: 0 30px;
             .hero__header{
                 h1{
@@ -309,7 +309,7 @@ main{
                 font-weight: 400;
                 font-size: 36px;
                 line-height: 61px;
-                text-align: center;
+
             }
         }
         .about__services{
@@ -375,20 +375,22 @@ main{
             display: flex;
             justify-content: space-between;
             align-items: center;
-
+            flex-wrap: wrap;
+            width: 100%;
             .works{
                 color: $light-color;
+                margin: 20px;
                 .up{
                     font-style: normal;
                     font-weight: 700;
-                    font-size: 40px;
+                    font-size: 32px;
                     line-height: 51px;
                 }
                 .bottom{
                     margin-top: 15px;
                     font-style: normal;
                     font-weight: 400;
-                    font-size: 80px;
+                    font-size: 64px;
                     line-height: 122px;
                 }
             }
@@ -455,6 +457,8 @@ main{
             display: flex;
             justify-content: space-between;
             position: relative;
+            width: 100%;
+            flex-wrap: wrap;
              &::after{
                  position: absolute;
                  content: '';
@@ -465,7 +469,7 @@ main{
              }
             .resume__left{
                 color: $light-color;
-                width: 43%;
+                max-width: 45%;
                 .education__header{
                     h1{
                         font-style: normal;
@@ -522,7 +526,7 @@ main{
             }
             .resume__right{
                 color: $light-color;
-                width: 43%;
+                max-width: 45%;
                 h1{
                     font-style: normal;
                     font-weight: 700;
@@ -731,11 +735,14 @@ main{
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
             .content__left{
-                width: 55%;
+                max-width: 55%;
                 .form-control{
+                    width: 100%;
                     .personal-info{
-                        max-width: 776px;   
+                        width: 100%;
                         input{
                             width: 48%;
                             margin: 4.5px;
@@ -757,7 +764,7 @@ main{
                     }
                     .personal-adress{
                         margin-top: 15px;
-                        max-width: 776px;   
+                        width: 100%;
                         input{
                             width: 48%;
                             border: none;
@@ -826,6 +833,7 @@ main{
                 }
             }
             .content__right{
+                max-width: 45%;
                 .content__img{
                     width: 45%;
                     img{
@@ -843,8 +851,10 @@ footer{
     .footer__main{
         display: flex;
         justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
         .footer__left{
-            width: 30%;
+            max-width: 30%;
             .footer__logo{
                 img{
                     width: 60px;
@@ -870,8 +880,7 @@ footer{
             }
         }
         .footer__center{
-            width: 30%;
-            margin-left: 80px;
+            max-width: 30%;
             .list__header{
                 h2{
                     color: $light-color;
@@ -896,7 +905,7 @@ footer{
             }
         }
         .footer__right{
-            width: 30%;
+            max-width: 30%;
             .contact__header{
                 h2{
                     color: $light-color;
@@ -981,7 +990,18 @@ footer{
             .resume__wrapper{
                 flex-direction: column;
                 width: 100%;
-    
+                &::after{
+                    display: none;
+                }
+                .resume__left{
+                    max-width: 100%;
+                    margin: 0 60px;
+                }
+                .resume__right{
+                    max-width: 100%;
+                    margin: 100px 60px 0 60px;
+                    
+                }
             }
         }
     }
@@ -1023,10 +1043,44 @@ footer{
             }
         }
         .about__section{
+            .about__text{
+                p{
+                    font-size: 24px;
+                    line-height: 44px;
+                }
+            }
             .about__services{
                 .service{
                     max-width: 100%;
                 }
+            }
+        }
+        .contact__section{
+            .contact__content{
+                .content__left{
+                    max-width: 100%;
+                }
+                .content__right{
+                    margin-top: 100px;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    footer{
+        .footer__main{
+            flex-direction: column;
+            .footer__left{
+                max-width: 100%;
+            }
+            .footer__center{
+                margin-top: 50px;
+                max-width: 100%;
+            }
+            .footer__right{
+                margin-top: 50px;
+                max-width: 100%;
             }
         }
     }
@@ -1044,6 +1098,7 @@ footer{
             flex-direction: column;
             .hero__left{
                 width: 100%;
+                margin: 0;
                 .hero__header{
                     h1{
                         font-size: 64px;
