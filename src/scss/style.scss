@@ -223,8 +223,10 @@ main{
     .hero__section{
         display: flex;
         justify-content: space-between;
+        width: 100%;
         .hero__left{
-            width: 50%; 
+            max-width: 50%; 
+            margin: 0 30px;
             .hero__header{
                 h1{
                     color: $light-color;
@@ -269,7 +271,7 @@ main{
             }
         }
         .hero__right{
-            width: 45%;
+            max-width: 45%;
             .hero__img{
                 max-width: 587px;
             }
@@ -316,7 +318,9 @@ main{
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
+            width: 100%;
             .service{
+                max-width: 40%;
                 color: $light-color;
                 margin: 40px;
                 .service__header{
@@ -329,7 +333,6 @@ main{
                 }
                 .service__text{
                     margin-top: 15px;
-                    max-width: 511px;
                     p{
                         font-style: normal;
                         font-weight: 300;
@@ -934,6 +937,14 @@ footer{
 //Media Queries
 
 @media (max-width:1280px){
+    .shape-1{
+        display: none;
+    }
+
+    .shape-2{
+        display: none;
+    }
+
     .header{
         .navbar{
             .nav__main{
@@ -941,38 +952,118 @@ footer{
             }
         }
     }
-    .hero__section{
-        flex-wrap: wrap;
-        flex-direction: column;
-        .hero__left{
-            width: 100%;
-            .hero__header{
-                h1{
-                    font-size: 18px;
+    main{
+        .hero__section{
+            flex-wrap: wrap;
+            flex-direction: column;
+            .hero__left{
+                max-width: 100%;
+                .hero__header{
+                    h1{
+                        font-size: 88px;
+                        width: 100%;
+                    }
+                }
+            }
+            .hero__right{
+                max-width: 100%;
+            }
+        }
+        .about__section{
+            .about__services{
+                flex-wrap: wrap;
+                .service{
                     width: 100%;
                 }
             }
         }
-        .hero__right{
-            
-        }
-    }
-
-    .resume__section{
-        .resume__wrapper{
-            flex-direction: column;
-            width: 100%;
-
+        .resume__section{
+            .resume__wrapper{
+                flex-direction: column;
+                width: 100%;
+    
+            }
         }
     }
 }
 
 @media (max-width:992px){
 
+    .social__media{
+        margin-left: 20px;
+    }
+    .ellipse__effect{
+        width: 500px;
+        height: 500px;
+        top: 700px;
+    }
+    main{
+        .hero__section{
+            flex-wrap: wrap;
+            flex-direction: column;
+            .hero__left{
+                width: 100%;
+                .hero__header{
+                    h1{
+                        font-size: 72px;
+                        width: 100%;
+                    }
+                }
+                .hero__text{
+                    p{
+                        font-size: 18px;
+                    }
+                }
+            }
+            .hero__right{
+                width: 100%;
+                img{
+                    max-width: 0px;
+                }
+            }
+        }
+        .about__section{
+            .about__services{
+                .service{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 768px){
 
+    .social__media{
+        display: none;
+        margin: 0;
+    }
+    main{
+        .hero__section{
+            flex-wrap: wrap;
+            flex-direction: column;
+            .hero__left{
+                width: 100%;
+                .hero__header{
+                    h1{
+                        font-size: 64px;
+                        width: 100%;
+                    }
+                }
+                .hero__text{
+                    p{
+                        font-size: 16px;
+                    }
+                }
+            }
+            .hero__right{
+                width: 100%;
+                img{
+                    max-width: 450px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 480px){
