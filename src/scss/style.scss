@@ -100,32 +100,8 @@ html{
             display: flex;
             justify-content: center;
             align-items: center;
-            .lang__btn{
-                margin-right: 40px;
-                button{
-                    border: 2px solid $secondary-color;
-                    background: transparent;
-                    color: $light-color;
-                    padding: 13px 23px;
-                    border-radius: 8px;
-                    font-family: 'Space Grotesk';
-                    font-style: normal;
-                    font-weight: 500;
-                    font-size: 16px;
-                    line-height: 20px;
-                    cursor: pointer;
-                    outline: none;
-                    transition: 300ms all ease-in-out;
-                    &:hover{
-                        background-color: $secondary-color;
-                        transition: 300ms all ease-in-out;
-                        -webkit-box-shadow: 0px 12px 40px -12px rgba(81, 43, 212, 1);
-                        -moz-box-shadow: 0px 12px 40px -12px rgba(81, 43, 212, 1);
-                        box-shadow: 0px 12px 40px -12px rgba(81, 43, 212, 1);
-                    }
-                }
-            }
             .donate__btn{
+                margin-right: 20px;
                 button{
                     background-color: $secondary-color;
                     color: $light-color;
@@ -155,7 +131,7 @@ html{
             display: none;
             .bx{
                 color: $light-color;
-                font-size: 40px;
+                font-size: 48px;
             }
         }
     }
@@ -757,41 +733,58 @@ main{
                 }
             }
             .content__right{
-                max-width: 45%;
+                max-width: 40%;
                 .contact__info{
                     .phone__number{
                         display: flex;
-                        justify-content: center;
+                        justify-content: flex-start;
                         align-items: center;
                         color: $light-color;
                         i{
-                            font-size: 32px;
+                            font-size: 40px;
                         }
                         .phone__info{
                             display: flex;
                             flex-direction: column;
+                            margin-left: 15px;
                             span{
-                                margin: 10px;
-                                font-size: 20px;
+                                
+                                font-size: 24px;
                             }
                         }
                     }
                     .email__adress{
                         display: flex;
-                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: center;
                         color: $light-color;
-                        span{
-                            font-size: 20px;
-                            margin: 10px;
+                        margin: 20px 0;
+                        i{
+                            font-size: 40px;
+                        }
+                        .email__info{
+                            display: flex;
+                            flex-direction: column;
+                            margin-left: 15px;
+                            span{
+                                font-size: 24px;
+                            }
                         }
                     }
                     .location{
                         display: flex;
-                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: center;
                         color: $light-color;
-                        span{
-                            margin: 10px;
-                            font-size: 20px;
+                        margin: 20px 0;
+                        i{
+                            font-size: 40px;
+                        }
+                        .location__info{
+                            margin-left: 15px;
+                            span{
+                                font-size: 24px;
+                            }
                         }
                     }
                 }
@@ -914,6 +907,9 @@ footer{
             .nav__main{
                 display: none;
             }
+            .nav__menu{
+                display: block;
+            }
         }
     }
     main{
@@ -956,6 +952,51 @@ footer{
                     max-width: 100%;
                     margin: 100px 60px 0 60px;
                     
+                }
+            }
+        }
+
+        .contact__section{
+            .contact__content{
+                .content__left{
+                    iframe{
+                        width: 500px;
+                        height: 300px;
+                    }
+                }
+                .content__right{
+                    .contact__info{
+                        .phone__number{
+                            i{
+                                font-size: 32px;
+                            }
+                            .phone__info{
+                                span{
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                        .email__adress{
+                            i{
+                                font-size: 32px;
+                            }
+                            .email__info{
+                                span{
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                        .location{
+                            i{
+                                font-size: 32px;
+                            }
+                            .location__info{
+                                span{
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -1244,6 +1285,17 @@ footer{
             .portfolio__carousel{
                 .portfolio__item{
                     max-width: 100%;
+                }
+            }
+        }
+
+        .contact__section{
+            .contact__content{
+                .content__left{
+                    iframe{
+                        width: 450px;
+                        height: 240px;
+                    }
                 }
             }
         }
