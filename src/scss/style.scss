@@ -747,106 +747,52 @@ main{
             flex-wrap: wrap;
             width: 100%;
             .content__left{
-                max-width: 55%;
-                .form-control{
-                    width: 100%;
-                    .personal-info{
-                        width: 100%;
-                        input{
-                            width: 48%;
-                            margin: 4.5px;
-                            border: none;
-                            outline: none;
-                            background-color: #000000;
-                            padding: 22px 45px 22px 22px;
-                            color: $light-color;
-                            border-radius: 8px;
-                            font-family: 'Space Grotesk',sans-serif;
-                            font-size: 18px;
-                            &:focus{
-                                border: 1px solid $secondary-color;
-                            }
-                            &:hover{
-                                border: 1px solid $secondary-color;
-                            }
-                        }
-                    }
-                    .personal-adress{
-                        margin-top: 15px;
-                        width: 100%;
-                        input{
-                            width: 48%;
-                            border: none;
-                            outline: none;
-                            background-color: #000000;
-                            padding: 22px 45px 22px 22px;
-                            color: $light-color;
-                            border-radius: 8px;
-                            margin: 4.5px;
-                            font-family: 'Space Grotesk',sans-serif;
-                            font-size: 18px;
-                            &:focus{
-                                border: 1px solid $secondary-color;
-                            }
-                            &:hover{
-                                border: 1px solid $secondary-color;
-                            }
-                        }
-                        
-                    }
-                    .message-area{
-                        margin-top: 15px;
-                        max-width: 765px;
-                        textarea{
-                            background-color: #000000;
-                            border: none;
-                            outline: none;
-                            color: $light-color;
-                            resize: none;
-                            padding: 22px;
-                            width: 100%;
-                            font-family: 'Space Grotesk',sans-serif;
-                            font-size: 18px;
-                            border-radius: 8px;
-                            &:focus{
-                                border: 1px solid $secondary-color;
-                            }
-                            &:hover{
-                                border: 1px solid $secondary-color;
-                            }
-                        }
-                    }
-                    .send-btn{
-                        margin-top: 30px;
-                        button{
-                            background-color: $secondary-color;
-                            border: none;
-                            outline: none;
-                            color: $light-color;
-                            font-family: 'Space Grotesk',sans-serif;
-                            font-weight: 400;
-                            padding: 15px 30px;
-                            font-size: 16px;
-                            border-radius: 8px;
-                            cursor: pointer;
-                            transition: 300ms all ease-in-out;
-                            &:hover{
-                                background-color: $secondary-color;
-                                transition: 300ms all ease-in-out;
-                                -webkit-box-shadow: 0px 12px 40px -12px rgba(81, 43, 212, 1);
-                                -moz-box-shadow: 0px 12px 40px -12px rgba(81, 43, 212, 1);
-                                box-shadow: 0px 12px 40px -12px rgba(81, 43, 212, 1);
-                            }
-                        }
-                    }
+                max-width: 50%;
+                iframe{
+                    width: 600px;
+                    height: 400px;
+                    border-radius: 8px;
+                    border: none;
+                    outline: none;
                 }
             }
             .content__right{
                 max-width: 45%;
-                .content__img{
-                    width: 45%;
-                    img{
-                        max-width: 350px;
+                .contact__info{
+                    .phone__number{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: $light-color;
+                        i{
+                            font-size: 32px;
+                        }
+                        .phone__info{
+                            display: flex;
+                            flex-direction: column;
+                            span{
+                                margin: 10px;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                    .email__adress{
+                        display: flex;
+                        flex-direction: column;
+                        color: $light-color;
+                        span{
+                            font-size: 20px;
+                            margin: 10px;
+                        }
+                    }
+                    .location{
+                        display: flex;
+                        flex-direction: column;
+                        color: $light-color;
+                        span{
+                            margin: 10px;
+                            font-size: 20px;
+                        }
                     }
                 }
             }
@@ -1182,6 +1128,16 @@ footer{
             }
         }
         .contact__section{
+            .contact__header{
+                h1{
+                    font-size: 40px;
+                }
+            }
+            .contact__text{
+                p{
+                    font-size: 16px;
+                }
+            }
             .contact__content{
                 .content__left{
                     max-width: 100%;
@@ -1270,6 +1226,24 @@ footer{
                             font-size: 14px;
                         }
                     }
+                }
+            }
+        }
+
+        .portfolio__section{
+            .portfolio__header{
+                h1{
+                    font-size: 40px;
+                }
+            }
+            .portfolio__text{
+                p{
+                    font-size: 16px;
+                }
+            }
+            .portfolio__carousel{
+                .portfolio__item{
+                    max-width: 100%;
                 }
             }
         }
