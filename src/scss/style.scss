@@ -151,6 +151,13 @@ html{
                 }
             }
         }
+        .nav__menu{
+            display: none;
+            .bx{
+                color: $light-color;
+                font-size: 40px;
+            }
+        }
     }
 }
 
@@ -407,8 +414,8 @@ main{
                 justify-content: center;
                 margin: 15px;
                 background-color: #000;
-                width: 200px;
-                height: 200px;
+                width: 270px;
+                height: 270px;
                 border-radius: 8px;
                 -webkit-box-shadow: 1px 1px 7px 1px rgba(0,0,0,0.51); 
                 box-shadow: 1px 1px 7px 1px rgba(0,0,0,0.51);
@@ -421,7 +428,7 @@ main{
                         box-shadow: 0px 12px 40px -12px rgba(81, 43, 212, 1);
                     }
                 img{
-                    width: 90px;
+                    width: 40%;
                 }
             }
         }
@@ -527,11 +534,13 @@ main{
             .resume__right{
                 color: $light-color;
                 max-width: 45%;
-                h1{
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 48px;
-                    line-height: 61px;
+                .experience__header{
+                    h1{
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 48px;
+                        line-height: 61px;
+                    }
                 }
                 .experience__wrapper{
                     margin-top: 75px;
@@ -650,13 +659,13 @@ main{
             align-items: center;
             .portfolio__item{
                 margin: 0 25px;
-                max-width: 400px;
+                max-width: 35%;
                 padding: 10px;
                 .portfolio__img{
                     position: relative;
                     object-fit: cover;
                     object-position: center;
-                    max-width: 400px;
+                    max-width: 100%;
                     height: 400px;
                     &::before{
                         position: absolute;
@@ -1043,6 +1052,11 @@ footer{
             }
         }
         .about__section{
+            .about__header{
+                h1{
+                    font-size: 40px;
+                }
+            }
             .about__text{
                 p{
                     font-size: 24px;
@@ -1051,6 +1065,118 @@ footer{
             }
             .about__services{
                 .service{
+                    max-width: 100%;
+                    .service__header{
+                        h1{
+                            font-size: 40px;
+                        }
+                    }
+                    .service__text{
+                        p{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .skills__section{
+            .skills__header{
+                h1{
+                    font-size: 40px;
+                }
+            }
+            .skills__text{
+                p{
+                    font-size: 16px;
+                }
+            }
+            .skills__counter{
+                .works{
+                    .up{
+                        font-size: 32px;
+                    }
+                    .bottom{
+                        font-size: 54px;
+                    }
+                }
+            }
+            .software__skills{
+                justify-content: center;
+                
+            }
+        }
+        .resume__section{
+            .resume__header{
+                h1{
+                    font-size: 40px;
+                }
+            }
+            .resume__text{
+                p{
+                    font-size: 16px;
+                }
+            }
+            .resume__wrapper{
+                .resume__left{
+                    .education__header{
+                        h1{
+                            font-size: 40px;
+                        }
+                    }
+                    .education__wrapper{
+                        .school__name{
+                            h1{
+                                font-size: 28px;
+                            }
+                            h3{
+                                font-size: 18px;
+                            }
+                        }
+                        .school__about{
+                            p{
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+                .resume__right{
+                    .experience__header{
+                        h1{
+                            font-size: 40px;
+                        }
+                    }
+                    .experience__wrapper{
+                        .work__name{
+                            h1{
+                                font-size: 28px;
+                            }
+                            h3{
+                                font-size: 18px;
+                            }
+                        }
+                        .work__about{
+                            p{
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .portfolio__section{
+            .portfolio__header{
+                h1{
+                    font-size: 40px;
+                }
+            }
+            .portfolio__text{
+                p{
+                    font-size: 16px;
+                }
+            }
+            .portfolio__carousel{
+                .portfolio__item{
                     max-width: 100%;
                 }
             }
@@ -1115,6 +1241,35 @@ footer{
                 width: 100%;
                 img{
                     max-width: 400px;
+                }
+            }
+        }
+        .about__section{
+            .about__header{
+                h1{
+                    font-size: 40px;
+                }
+            }
+            .about__text{
+                p{
+                    font-size: 22px;
+                    line-height: 44px;
+                }
+            }
+            .about__services{
+                margin-top: 75px;
+                .service{
+                    max-width: 100%;
+                    .service__header{
+                        h1{
+                            font-size: 36px;
+                        }
+                    }
+                    .service__text{
+                        p{
+                            font-size: 14px;
+                        }
+                    }
                 }
             }
         }

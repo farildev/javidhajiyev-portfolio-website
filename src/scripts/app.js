@@ -31,7 +31,7 @@ $('.portfolio__carousel').slick({
       breakpoint:992,
       settings: {
         slidesToScroll: 1,
-        slidesToShow: 2,
+        slidesToShow: 1,
       },
     },
     {
