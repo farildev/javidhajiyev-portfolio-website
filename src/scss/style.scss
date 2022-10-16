@@ -129,6 +129,7 @@ html{
         }
         .nav__menu{
             display: none;
+            cursor: pointer;
             .bx{
                 color: $light-color;
                 font-size: 48px;
@@ -721,15 +722,12 @@ main{
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
+            padding: 1rem;
             width: 100%;
             .content__left{
                 max-width: 50%;
-                iframe{
-                    width: 600px;
-                    height: 400px;
-                    border-radius: 8px;
-                    border: none;
-                    outline: none;
+                img{
+                    width: 100%;
                 }
             }
             .content__right{
@@ -1292,9 +1290,10 @@ footer{
         .contact__section{
             .contact__content{
                 .content__left{
+                    max-width: 100%;
                     iframe{
-                        width: 450px;
-                        height: 240px;
+                        width: 375px;
+                        height: 300px;
                     }
                 }
             }
@@ -1303,7 +1302,17 @@ footer{
 }
 
 @media (max-width: 480px){
-
+    .contact__section{
+        .contact__content{
+            .content__left{
+                max-width: 100%;
+                iframe{
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 360px){
