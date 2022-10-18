@@ -258,6 +258,9 @@ main{
             max-width: 45%;
             .hero__img{
                 max-width: 587px;
+                img{
+                    width: 100%;
+                }
             }
         }
     }
@@ -1031,9 +1034,7 @@ footer{
             }
             .hero__right{
                 width: 100%;
-                img{
-                    max-width: 0px;
-                }
+                
             }
         }
         .about__section{
@@ -1302,13 +1303,232 @@ footer{
 }
 
 @media (max-width: 480px){
-    .contact__section{
-        .contact__content{
-            .content__left{
-                max-width: 100%;
-                iframe{
-                    width: 200px;
-                    height: 200px;
+    main{
+        .hero__section{
+            .hero__left{
+                .hero__header{
+                    h1{
+                        font-size: 54px;
+                        line-height: 78px;
+                    }
+                }
+                .hero__text{
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+            .hero__right{
+                .hero__img{
+                    max-width: 350px;
+                    margin-top: 50px;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .about__section{
+            .about__header{
+                h1{
+                    font-size: 36px;
+                }
+            }
+            .about__text{
+                p{
+                    font-size: 20px;
+                    line-height: 40px;
+                }
+            }
+            .about__services{
+                .service{
+                    .service__header{
+                        h1{
+                            font-size: 32px;
+                            line-height: 60px;
+                        }
+                    }
+                    .service__text{
+                        p{
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+        .skills__section{
+            .skills__header{
+                h1{
+                    font-size: 36px;
+                }
+            }
+            .skills__text{
+                p{
+                    font-size: 14px;
+                }
+            }
+            .skills__counter{
+                .works{
+                    .up{
+                        font-size: 28px;
+                    }
+                    .bottom{
+                        font-size: 48px;
+                    }
+                }
+            }
+        }
+        .resume__section{
+            .resume__header{
+                h1{
+                    font-size: 36px;
+                }
+            }
+            .resume__text{
+                p{
+                    font-size: 14px;
+                }
+            }
+            .resume__wrapper{
+                .resume__left{
+                    .education__header{
+                        h1{
+                            font-size: 32px;
+                        }
+                    }
+                    .education__wrapper{
+                        .school__name{
+                            h1{
+                                font-size: 22px;
+                            }
+                            h3{
+                                font-size: 14px;
+                            }
+                        }
+                        .school__about{
+                            p{
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+                .resume__right{
+                    .experience__header{
+                        h1{
+                            font-size: 32px;
+                        }
+                    }
+                    .experience__wrapper{
+                        .work__name{
+                            h1{
+                                font-size: 22px;
+                            }
+                            h3{
+                                font-size: 14px;
+                            }
+                        }
+                        .work__about{
+                            p{
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+            .resume__btn{
+                button{
+                    font-size: 18px;
+                    padding: 7px 25px;
+                }
+            }
+        }
+        .portfolio__section{
+            .portfolio__header{
+                h1{
+                    font-size: 36px;
+                }
+            }
+            .portfolio__text{
+                p{
+                    font-size: 14px;
+                }
+            }
+            .portfolio__carousel{
+                .portfolio__item{
+                    .portfolio__img{
+                        height: 270px;
+                    }
+                    .portfolio__name{
+                        h2{
+                            font-size: 18px;
+                            line-height: 36px;
+                        }
+                    }
+                    .portfolio__category{
+                        span{
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+        .contact__section{
+            .contact__header{
+                h1{
+                    font-size: 36px;
+                    line-height: 64px;
+                }
+            }
+            .contact__text{
+                p{
+                    font-size: 14px;
+                }
+            }
+            .contact__content{
+                .content__right{
+                    .contact__info{
+                        .phone__number{
+                            i{
+                                font-size: 32px;
+                            }
+                            .phone__info{
+                                span{
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                        .email__adress{
+                            i{
+                                font-size: 32px;
+                            }
+                            .email__info{
+                                span{
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        .footer__main{
+            .footer__left{
+                .footer__logo{
+                    img{
+                        width: 40px;
+                    }
+                }
+                .footer__copyright{
+                    p{
+                        font-size: 16px;
+                    }
+                }
+                .footer__social{
+                    a{
+                        font-size: 22px;
+                    }
                 }
             }
         }
