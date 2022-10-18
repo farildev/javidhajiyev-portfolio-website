@@ -44,6 +44,24 @@ html{
     }
 }
 
+.scroll__top{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary-color;
+    width: 40px;
+    height: 40px;
+    bottom: 40px;
+    right: 70px;
+    cursor: pointer;
+    border-radius: 8px;
+    i{
+        font-size: 32px;
+        color: $light-color;
+    }
+}
+
 .mobile__menu{
     position: fixed;
     top: 0;
