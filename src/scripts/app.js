@@ -24,7 +24,6 @@ $('.portfolio__carousel').slick({
       settings: {
         slidesToScroll: 1,
         slidesToShow: 2,
-        centerPadding: '10px',
       },
     },
     {
@@ -54,3 +53,15 @@ $('.portfolio__carousel').slick({
 });
 
   AOS.init();
+
+  const mobileMenu = document.querySelector('.mobile__menu');
+  const closeMenu = document.querySelector('.close__menu');
+  const openMenu = document.querySelector('.nav__menu');
+
+  openMenu.addEventListener('click', () => {
+    mobileMenu.classList.toggle('is-active');
+  })
+
+  closeMenu.addEventListener('click', () => {
+    mobileMenu.classList.remove('is-active');
+  })
