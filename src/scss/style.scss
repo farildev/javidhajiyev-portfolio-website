@@ -61,6 +61,9 @@ html{
         font-size: 32px;
         color: $light-color;
     }
+    &.show{
+        visibility: visible;
+    }
 }
 .mobile__menu{
     position: fixed;

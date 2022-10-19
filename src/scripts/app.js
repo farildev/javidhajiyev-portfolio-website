@@ -8,20 +8,20 @@ window.addEventListener('scroll' , function(){
   /*Scroll Top */
   const scrollBtn = document.querySelector('.scroll__btn');
   window.addEventListener('scroll', () => {
-    if (this.scroll >= 400) {
+    if (this.scroll > 400) {
       scrollBtn.classList.add('show')
     }
     else {
       scrollBtn.classList.remove('show');
     }
-  })
+  });
 
   scrollBtn.addEventListener('click', () => {
     window.scrollTo({
       top:0,
       behavior: "smooth"
     })
-  })
+  });
 
 /*Slick Slider Configuration */
 
