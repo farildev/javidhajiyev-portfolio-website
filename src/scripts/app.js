@@ -1,12 +1,29 @@
-
+/*Header Scroll Background */
 window.addEventListener('scroll' , function(){
   let header = document.querySelector('.header');
   let windowPosition = window.scrollY > 0;
   header.classList.toggle('scrolling-active', windowPosition);
-})
+});
 
+  /*Scroll Top */
+  const scrollBtn = document.querySelector('.scroll__btn');
+  window.addEventListener('scroll', () => {
+    if (this.scroll >= 400) {
+      scrollBtn.classList.add('show')
+    }
+    else {
+      scrollBtn.classList.remove('show');
+    }
+  })
 
-//Slick Slider Zone
+  scrollBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top:0,
+      behavior: "smooth"
+    })
+  })
+
+/*Slick Slider Configuration */
 
 $('.portfolio__carousel').slick({
   infinite: true,
@@ -54,6 +71,7 @@ $('.portfolio__carousel').slick({
 
   AOS.init();
 
+  /*Mobile Navigation Menu */
   const mobileMenu = document.querySelector('.mobile__menu');
   const closeMenu = document.querySelector('.close__menu');
   const openMenu = document.querySelector('.nav__menu');
@@ -64,4 +82,5 @@ $('.portfolio__carousel').slick({
 
   closeMenu.addEventListener('click', () => {
     mobileMenu.classList.remove('is-active');
-  })
+  });
+
