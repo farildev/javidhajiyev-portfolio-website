@@ -273,6 +273,7 @@ main{
     .hero__section{
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         width: 100%;
         .hero__left{
             max-width: 45%; 

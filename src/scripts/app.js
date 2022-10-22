@@ -18,7 +18,7 @@ window.addEventListener('scroll' , function(){
       scrollBtn.classList.add('show')
     }
     else {
-      scrollBtn.classList.remove('show');
+      scrollBtn.classList.remove('show')
     }
   });
 
@@ -47,21 +47,24 @@ window.addEventListener('scroll' , function(){
   });
 
   /*Number Counter */
-  let counterNums = document.querySelector('#count-num');
-  let interval = 3000;
+  const counters = document.querySelectorAll('#count-num');
 
-  counterNums.forEach((counterNum) => {
-    let startValue = 0;
-    let endValue = parseInt(counterNum.getAttribute('.data-val'));
-    let duration = Math.floor(interval / endValue);
-    let counter = setInterval(function() {
-      startValue += 1;
-      counterNum.textContext = startValue;
-      if (startValue == endValue){
-        clearInterval(counter);
+  counters.forEach((counter) => {
+    counter.innerText = '0';
+
+    const updateCounter = () => {
+      const target = +counter.getAttribute('data-target');
+      const count = +counter.innerText;
+      const increment = target / 700;
+
+      if (count < target) {
+        counter.innerText = `${Math.ceil(count + increment)}`;
+        setTimeout(updateCounter, 1);
       }
-    },duration);
+    };
+    updateCounter();
   });
+ 
 
   /*Slick Slider Configuration */
 
