@@ -57,12 +57,16 @@ html{
     cursor: pointer;
     border-radius: 8px;
     z-index: 99;
+    visibility: hidden;
+    transform: translateX(100px);
+    transition: 300ms all ease-in-out;
     i{
         font-size: 32px;
         color: $light-color;
     }
     &.show{
         visibility: visible;
+        transform: translateX(0);
     }
 }
 .mobile__menu{
@@ -260,6 +264,7 @@ html{
     height: 82px;
     right: 20px;
     top: 500px;
+    opacity: 50%;
 }
 .shape-2{
     position: absolute;
@@ -267,6 +272,7 @@ html{
     height: 82px;
     left: 61px;
     top: 666px;
+    opacity: 50%;
 }
 main{
     margin-top: 80px;

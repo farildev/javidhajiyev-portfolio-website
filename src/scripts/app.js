@@ -1,9 +1,9 @@
 /*Header Scroll Background */
-window.addEventListener('scroll' , function(){
-  let header = document.querySelector('.header');
-  let windowPosition = window.scrollY > 0;
-  header.classList.toggle('scrolling-active', windowPosition);
-});
+ window.addEventListener('scroll' , function(){
+   let header = document.querySelector('.header');
+   let windowPosition = window.scrollY > 0;
+   header.classList.toggle('scrolling-active', windowPosition);
+ });
 
   /*Scroll Top */
   const scrollBtn = document.querySelector('.scroll__btn');
@@ -14,7 +14,7 @@ window.addEventListener('scroll' , function(){
     })
   });
   window.addEventListener('scroll', () => {
-    if (this.scroll >= 400) {
+    if (this.scrollY >= 600) {
       scrollBtn.classList.add('show')
     }
     else {
@@ -99,7 +99,7 @@ $('.portfolio__carousel').slick({
         slidesToScroll: 1,
         slidesToShow: 1,
       },
-    },
+    },  
     {
       breakpoint:480,
       settings: {
