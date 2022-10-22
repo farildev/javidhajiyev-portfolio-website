@@ -305,24 +305,26 @@ main{
             }
             .hero__btn{
                 margin-top: 40px;
-                button{
-                    color: $light-color;
-                    background-color: $secondary-color;
-                    padding: 20px 35px;
-                    font-size: 16px;
-                    font-family: 'Space Grotesk',sans-serif;
-                    border-radius: 8px;
-                    cursor: pointer;
-                    transition: 300ms all ease-in-out;
-                    outline: none;
-                    border: none;
-                    &:hover{
-                        background-color: $light-color;
-                        color: $secondary-color;
+                a{
+                    button{
+                        color: $light-color;
+                        background-color: $secondary-color;
+                        padding: 20px 35px;
+                        font-size: 16px;
+                        font-family: 'Space Grotesk',sans-serif;
+                        border-radius: 8px;
+                        cursor: pointer;
                         transition: 300ms all ease-in-out;
-                        -webkit-box-shadow: 0px 12px 40px -12px rgba(81, 43, 212, 1);
-                        -moz-box-shadow: 0px 12px 40px -12px rgba(81, 43, 212, 1);
-                        box-shadow: 0px 12px 40px -12px rgba(81, 43, 212, 1);
+                        outline: none;
+                        border: none;
+                        &:hover{
+                            background-color: $light-color;
+                            color: $secondary-color;
+                            transition: 300ms all ease-in-out;
+                            -webkit-box-shadow: 0px 12px 40px -12px rgba(81, 43, 212, 1);
+                            -moz-box-shadow: 0px 12px 40px -12px rgba(81, 43, 212, 1);
+                            box-shadow: 0px 12px 40px -12px rgba(81, 43, 212, 1);
+                        }
                     }
                 }
             }
@@ -913,6 +915,9 @@ footer{
                         font-weight: 300;
                         font-size: 20px;
                         line-height: 26px;
+                        &:hover{
+                            text-decoration: underline;
+                        }
                     }
                 }
             }

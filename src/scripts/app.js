@@ -65,7 +65,6 @@
     updateCounter();
   });
  
-
   /*Slick Slider Configuration */
 
 $('.portfolio__carousel').slick({
