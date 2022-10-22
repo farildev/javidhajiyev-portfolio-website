@@ -29,7 +29,7 @@ window.addEventListener('scroll' , function(){
 
   openMenu.addEventListener('click', () => {
     mobileMenu.classList.toggle('is-active');
-  })
+  });
 
   closeMenu.addEventListener('click', () => {
     mobileMenu.classList.remove('is-active');
@@ -44,6 +44,23 @@ window.addEventListener('scroll' , function(){
         behavior : "smooth"
       })
     })
+  });
+
+  /*Number Counter */
+  let counterNums = document.querySelector('#count-num');
+  let interval = 3000;
+
+  counterNums.forEach((counterNum) => {
+    let startValue = 0;
+    let endValue = parseInt(counterNum.getAttribute('.data-val'));
+    let duration = Math.floor(interval / endValue);
+    let counter = setInterval(function() {
+      startValue += 1;
+      counterNum.textContext = startValue;
+      if (startValue == endValue){
+        clearInterval(counter);
+      }
+    },duration);
   });
 
   /*Slick Slider Configuration */
