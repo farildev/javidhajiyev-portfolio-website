@@ -22,7 +22,31 @@ window.addEventListener('scroll' , function(){
     }
   });
 
-/*Slick Slider Configuration */
+  /*Mobile Navigation Menu */
+  const mobileMenu = document.querySelector('.mobile__menu');
+  const closeMenu = document.querySelector('.close__menu');
+  const openMenu = document.querySelector('.nav__menu');
+
+  openMenu.addEventListener('click', () => {
+    mobileMenu.classList.toggle('is-active');
+  })
+
+  closeMenu.addEventListener('click', () => {
+    mobileMenu.classList.remove('is-active');
+  });
+
+  /*NavLink Scrool Anchor Point Configuration */
+  const anchorPoint = document.querySelectorAll('a[href^="#"]');
+  anchorPoint.forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute("href")).scrollIntoView({
+        behavior : "smooth"
+      })
+    })
+  });
+
+  /*Slick Slider Configuration */
 
 $('.portfolio__carousel').slick({
   infinite: true,
@@ -69,17 +93,4 @@ $('.portfolio__carousel').slick({
 });
 
   AOS.init();
-
-  /*Mobile Navigation Menu */
-  const mobileMenu = document.querySelector('.mobile__menu');
-  const closeMenu = document.querySelector('.close__menu');
-  const openMenu = document.querySelector('.nav__menu');
-
-  openMenu.addEventListener('click', () => {
-    mobileMenu.classList.toggle('is-active');
-  })
-
-  closeMenu.addEventListener('click', () => {
-    mobileMenu.classList.remove('is-active');
-  });
 
