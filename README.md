@@ -12,5 +12,7 @@ Github Profile Link : <a href="https://github.com/CavidH">Github</a>
 Linkedin Profile Link : <a href="https://www.linkedin.com/in/cavid-hc/">Linkedin</a>
 Instagram Profile Link : <a href="https://www.instagram.com/javid_hc/">Instagram</a>
 
+This website designed by Faril Mammadov.
+
 
 
