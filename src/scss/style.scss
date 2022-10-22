@@ -644,7 +644,7 @@ main{
                 align-items: center;
                 background-color: $secondary-color;
                 color: $light-color;
-                padding: 10px 40px;
+                padding: 20px 40px;
                 font-size: 24px;
                 font-weight: 400;
                 font-family: 'Space Grotesk',sans-serif;
@@ -653,19 +653,19 @@ main{
                 outline: none;
                 cursor: pointer;
                 transition: 300ms all ease-in-out;
+                i{
+                    margin-left: 15px;
+                    font-size: 30px;
+                }
                     &:hover{
                         transition: 300ms all ease-in-out;
                         -webkit-box-shadow: 0px 12px 40px -12px rgba(81, 43, 212, 1);
                         -moz-box-shadow: 0px 12px 40px -12px rgba(81, 43, 212, 1);
                         box-shadow: 0px 12px 40px -12px rgba(81, 43, 212, 1);
+                        background-color: $light-color;
+                        color: $secondary-color;
                     }
-                .icon{
-                    font-size: 30px;
-                    margin-left: 10px;
-                    img{
-                        margin-top: 10px;
-                    }
-                }
+                
             }
         }
     }
@@ -1247,7 +1247,7 @@ footer{
             }
             .contact__content{
                 .content__left{
-                    max-width: 100%;
+                    max-width: 75%;
                 }
                 .content__right{
                     margin-top: 100px;
@@ -1370,7 +1370,7 @@ footer{
 }
 
 @media (max-width: 480px){
-    .ellipse__effect-3{
+    .ellipse__effect-2{
         position: absolute;
         width: 450px;
         height: 600px;
@@ -1659,5 +1659,171 @@ footer{
 }
 
 @media (max-width: 360px){
-    
+
+    .ellipse__effect-2{
+        width: 400px;
+        height: 400px;
+    }
+    .header{
+        .navbar{
+            .nav__btn{
+                .donate__btn{
+                    display: none;
+                }
+            }
+        }
+    }
+    main{
+        .hero__section{
+            .hero__left{
+                .hero__btn{
+                    button{
+                        font-size: 14px;
+                        padding: 15px 25px;
+                    }
+                }
+            }
+        }
+        .about__section{
+            .about__header{
+                h1{
+                    font-size: 28px;
+                }
+            }
+            .about__text{
+                p{
+                    font-size: 16px;
+                    line-height: 30px;
+                }
+            }
+            .about__services{
+                margin: 0;
+                justify-content: center;
+                .service{
+                    max-width: 100%;
+                    .service__header{
+                        h1{
+                            font-size: 24px;
+                            line-height: 38px;
+                        }
+                    }
+                    .service__text{
+                        p{
+                            font-size: 12px;
+                            line-height: 28px;
+                        }
+                    }
+                }
+            }
+        }
+        .skills__section{
+            .skills__header{
+                h1{
+                    font-size: 28px;
+                }
+            }
+            .skills__text{
+                p{
+                    font-size: 12px;
+                    line-height: 28px;
+                }
+            }
+            .skills__counter{
+                .works{
+                    .up{
+                        font-size: 24px;
+                    }
+                    .bottom{
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+        .resume__section{
+            .resume__header{
+                h1{
+                    font-size: 28px;
+                }
+            }
+            .resume__text{
+                p{
+                    font-size: 12px;
+                    line-height: 28px;
+                }
+            }
+            .resume__wrapper{
+                .resume__btn{
+                    button{
+                        font-size: 16px;
+                        i{
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+        }
+        .portfolio__section{
+            .portfolio__header{
+                h1{
+                    font-size: 28px;
+                }
+            }
+            .portfolio__text{
+                p{
+                    font-size: 12px;
+                    line-height: 28px;
+                }
+            }
+        }
+        .contact__section{
+            .contact__header{
+                h1{
+                    font-size: 28px;
+                    line-height: 48px;
+                }
+            }
+            .contact__text{
+                p{
+                    font-size: 12px;
+                    line-height: 28px;
+                }
+            }
+            .contact__content{
+                .content__right{
+                    .contact__info{
+                        .phone__number{
+                            .phone__info{
+                                i{
+                                    font-size: 32px;
+                                }
+                                span{
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                        .email__adress{
+                            .email__info{
+                                i{
+                                    font-size: 32px;
+                                }
+                                span{
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                        .location{
+                            .location__info{
+                                i{
+                                    font-size: 32px;
+                                }
+                                span{
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
